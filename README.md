@@ -95,10 +95,92 @@ A comprehensive AutoHotkey-based keyboard shortcut system for Windows that provi
 
 ## 📖 Documentation
 
-- **[HOW_TO_USE.md](HOW_TO_USE.md)** - Comprehensive usage guide
-- **[ALL_SHORTCUTS_LIST.md](ALL_SHORTCUTS_LIST.md)** - Complete shortcuts reference
-- **[AUTO-START-GUIDE.md](AUTO-START-GUIDE.md)** - Auto-start setup instructions
-- **[NEW_PC_SETUP.md](NEW_PC_SETUP.md)** - Transfer guide for new computers
+### 🚀 How to Use
+
+#### ✅ Step 1: Run Your Script
+
+Since you already have AutoHotkey installed, just follow these steps:
+
+**Option A: Double-Click Method (Easiest!)**
+
+1. Go to the folder where you saved the script
+2. **Double-click** on `CustomShortcuts.ahk`
+3. You'll see a small AutoHotkey icon (green H) in your system tray
+4. Done! Your shortcuts are now active!
+
+**Option B: Right-Click Method**
+
+1. Right-click on `CustomShortcuts.ahk`
+2. Select **"Run Script"**
+
+#### 🎯 Test Your Shortcuts
+
+Try pressing these keys together:
+
+- **Win + W** → Opens WhatsApp Beta
+- **Win + T** → Opens Terminal
+- **Win + C** → Opens Chrome
+- **Ctrl + Alt + H** → Shows help with all shortcuts
+
+#### 🛑 Stopping the Script
+
+- Right-click the AutoHotkey icon (green H) in system tray
+- Click **"Exit"**
+
+---
+
+## 🔄 Auto-Start Setup
+
+Make the script **run automatically** when Windows starts!
+
+### ✅ Method 1: Automatic Setup (EASIEST!)
+
+1. **Double-click** on **`Setup-AutoStart.bat`**
+2. Press any key to continue
+3. Done! ✅
+
+### ✅ Method 2: Manual Setup
+
+1. **Press Win + R**
+2. **Type:** `shell:startup` and press Enter
+3. **Right-click** in the folder → **New** → **Shortcut**
+4. Browse to your `CustomShortcuts.ahk` file and click **OK**
+
+To disable: Press `Win + R`, type `shell:startup`, delete the shortcut.
+
+---
+
+## 🖥️ New PC Setup / Transfer Guide
+
+### 📦 What You Need
+
+1. **Install AutoHotkey (REQUIRED)**
+
+   - Download from [autohotkey.com](https://www.autohotkey.com/)
+   - Install v2.0 or later
+
+2. **Copy Files**
+   - Copy this entire folder to your new PC
+
+### 🚀 Setup Steps
+
+1. **Install AutoHotkey**
+2. **Copy the folder** to your new PC
+3. **Double-click `CustomShortcuts.ahk`** to run
+4. (Optional) Run `Setup-AutoStart.bat` for auto-start
+
+### 🔧 Adjustments Needed
+
+Some apps might be installed in different locations on a new PC (e.g., Adobe apps).
+
+**How to fix:**
+
+1. Run **`FindAppPaths.bat`** to find correct paths
+2. Right-click `CustomShortcuts.ahk` → **Edit Script**
+3. Update the paths with the new ones found
+4. Right-click tray icon → **Reload Script**
+
+---
 
 ## 🔧 Customization
 
@@ -114,8 +196,7 @@ Run, "C:\Path\To\Your\App.exe"
 return
 ```
 
-3. Save the file
-4. Right-click the tray icon → **Reload Script**
+3. Save the file and **Reload Script**
 
 ### Finding App Paths
 
@@ -126,61 +207,14 @@ Get-StartApps | Where-Object {$_.Name -like "*AppName*"}
 ```
 
 **For Desktop Apps:**
+Right-click app shortcut → Properties → Copy "Target" path
 
-- Right-click app shortcut → Properties → Copy "Target" path
-
-See [HOW_TO_USE.md](HOW_TO_USE.md) for detailed instructions.
+---
 
 ## 🛠️ Utilities
 
 - **`FindAppPaths.bat`** - Helper tool to locate application paths
 - **`Setup-AutoStart.bat`** - One-click auto-start configuration
-
-## ⚙️ Configuration
-
-The script includes intelligent path detection for common applications:
-
-- Adobe Creative Suite (Photoshop, Premiere Pro)
-- Microsoft Office (Outlook)
-- PureRef
-- Steam games
-
-Paths are automatically checked in multiple common installation locations.
-
-## 🔄 Auto-Start Setup
-
-Run `Setup-AutoStart.bat` to enable automatic startup:
-
-1. Double-click `Setup-AutoStart.bat`
-2. Press any key to continue
-3. Done! Shortcuts will work on every boot
-
-To disable: Press `Win + R`, type `shell:startup`, delete the shortcut.
-
-## 📝 Notes
-
-- Some shortcuts override Windows defaults (marked with ⚠️)
-- `Win + E` is intentionally NOT overridden (keeps File Explorer default)
-- Script must be running for shortcuts to work
-- Green "H" icon in system tray indicates active status
-
-## 🆘 Troubleshooting
-
-**Script won't run?**
-
-- Ensure AutoHotkey is installed
-- Try running as administrator
-
-**Shortcut doesn't work?**
-
-- Verify the application is installed
-- Check the app path in the script
-- See [HOW_TO_USE.md](HOW_TO_USE.md) for path finding instructions
-
-**Need help?**
-
-- Press `Ctrl + Alt + H` for the built-in help menu
-- Check the documentation files
 
 ## 📄 License
 
@@ -188,12 +222,7 @@ This project is licensed under the MIT License - feel free to modify and distrib
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
-
-- Report bugs
-- Suggest new shortcuts
-- Submit pull requests
-- Share your custom configurations
+Contributions are welcome! Feel free to report bugs, suggest new shortcuts, or submit pull requests.
 
 ## 🌟 Acknowledgments
 
