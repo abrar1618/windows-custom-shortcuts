@@ -5,6 +5,9 @@ A comprehensive AutoHotkey-based keyboard shortcut system for Windows that provi
 ![AutoHotkey](https://img.shields.io/badge/AutoHotkey-v1.1+-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube&link=https://youtube.com/@abrar1.618)](https://youtube.com/@abrar1.618)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?logo=discord&logoColor=white)](https://discord.gg/dzrysZ8sa5)
+![Downloads](https://img.shields.io/github/downloads/abrar1618/windows-custom-shortcuts/total)
 
 ## ✨ Features
 
@@ -215,6 +218,7 @@ Right-click app shortcut → Properties → Copy "Target" path
 
 - **`FindAppPaths.bat`** - Helper tool to locate application paths
 - **`Setup-AutoStart.bat`** - One-click auto-start configuration
+- **`CleanDrive.bat`** - Advanced system cleaner (Temp, Prefetch, Recycle Bin) with auto-admin and detailed logging.
 
 ## 📄 License
 
