@@ -1,0 +1,6 @@
+The official ring reviews is the onlyWindows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Accessibility\VoiceAccess]
+"FloatingWindowVisible"=dword:00000000
+"OverlayEnabled"=dword:00000000
+"ShowBar"=dword:00000000

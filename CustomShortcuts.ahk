@@ -131,6 +131,15 @@ else
     MsgBox, Photoshop not found! Please update the path in the script.
 return
 
+; Alt + MButton → Pan (Simulate Space Down)
+#IfWinActive ahk_class Photoshop
+!MButton::  
+    Send, {Space down}
+    KeyWait, MButton
+    Send, {Space up}
+return
+#IfWinActive
+
 ; ============================================
 ; STEAM / GAME APPS
 ; ============================================
@@ -184,7 +193,7 @@ return
 
 ; Win + W → WhatsApp Beta
 #w::
-Run, shell:AppsFolder\5319275A.51895FA4EA97F_cv1g1gvanyjgm!App
+Run, shell:AppsFolder\5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App
 return
 
 ; Win + Shift + W → Reddit
@@ -263,6 +272,7 @@ Win + V          → Clipboard History (Windows default)
 Win + Ctrl + P   → PureRef
 Win + Shift + P  → Premiere Pro
 Win + P          → Photoshop ⚠️ (replaces Project display)
+Alt + MButton    → Pan (Photoshop only)
 
 🎮 GAMES:
 Win + 5          → Blender 5.0 (Steam)
